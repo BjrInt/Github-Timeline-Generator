@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Github Timeline Generator</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <h1>Github Timeline Generator</h1>
+
+        <p>
+          This tool allows you to generate a Github timeline easily. Simply click on the squares you would like to fill,
+          the more you click on a square the brightier it will appear, up to 4 levels of brightness, as demonstrated on
+          the scale below.
+        </p>
+
+        <div style="display: flex">
+          <div class="contribution" data-weight="1">1</div>
+          <div class="contribution" data-weight="2">2</div>
+          <div class="contribution" data-weight="3">3</div>
+          <div class="contribution" data-weight="4">4</div>
+        </div>
+      </section>
+
+      <p>
+        Once you finished drawing, press <strong>export</strong> to generate a bash script. Just create a new directory,
+        paste the script inside of it and execute it (no malicious code, I swear 🤫), just make sure git is properly set
+        up on your machine. This will create a repository, and you just have to upload it on Github and your timeline
+        should be online!
+      </p>
+
+      <section>
+        <p>
+          I would like to fill my Github timeline for the year...
+          <input type="number" id="year_select" value="2022" min="2000" max="2050" />
+        </p>
+      </section>
+
+      <section id="timeline_wrapper"></section>
+
+      <button id="export_button">Export</button>
+    </main>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
