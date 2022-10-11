@@ -5,11 +5,15 @@ enum Increments {
   MINUTES = 1000 * 60 * 5,
 }
 
-const increaseDate = (date: Date, increment: Increments) => {
-  return new Date(date.getTime() + increment)
-}
+/**
+ * Takes a Date as an argument and increment it with a given timestamp
+ */
+const increaseDate = (date: Date, increment: Increments) => new Date(date.getTime() + increment)
 
-export const createGitHistory = (year: number, contributions: Contribution[]) => {
+/**
+ * Generates a script file with git commits for a given year.
+ */
+export const createGitHistory = (year: number, contributions: Contribution[]): string => {
   let currentDate = new Date(Date.UTC(year, 0, 1, 4, 0))
   let buffer = `git init\ntouch dump.txt\n`
 
