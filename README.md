@@ -4,6 +4,15 @@ A web interface to customize your github timeline!
 
 ## How?
 
+Simply load the website and fill the squares. Once you get a pattern that you like, hit the export button to download a shell script.
+You just need to create an empty directory, place the script inside of it and execute it. This will generate a bunch of commits that match the pattern you created.
+
+You'll then have to publish it to Github and enjoy.
+
+## Does this even work ?
+
+I created a dummy github profile to test the app, and so far it works flawlessly. [You can check it out here](https://github.com/MyFirstDevProfile?tab=overview&from=2022-10-01&to=2022-10-07).
+
 ## Why use it?
 
 ### As a canvas?
@@ -22,9 +31,7 @@ This tool provides a linear graph of hundreds, if not thousands of commit, only 
 
 I understand the importance of establishing a strong online presence for developers and showcasing their skills effectively. One aspect that often comes into play is the measurement of a developer's worthiness based on their GitHub contributions. However, I have come to realize that relying solely on GitHub contributions may not accurately represent the true value and expertise of a developer.
 
-Consider this: some developers commit frequently to artificially boost their numbers, while others invest substantial time and effort into a single commit, resulting in the same impactful outcome. It's evident that the quantity of commits does not necessarily reflect the quality or depth of a developer's work. Yet many recruiters will still use that metric as a reference. 
-
-### 
+Consider this: some developers commit frequently to artificially boost their numbers, while others invest substantial time and effort into a single commit, resulting in the same impactful outcome. It's evident that the quantity of commits does not necessarily reflect the quality or depth of a developer's work. Yet many recruiters will still use that metric as a reference.
 
 ## A short piece of advice and disclaimer
 
