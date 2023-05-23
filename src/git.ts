@@ -22,7 +22,7 @@ export const createGitHistory = (year: number, contributions: Contribution[]): s
       const randomBytes = crypto.getRandomValues(new Uint8Array(4 * contribution))
       for (let i = 0; i < 4 * contribution; i++) {
         const randomByte = randomBytes[i].toString(16)
-        buffer += `echo "${randomByte}" >> dump.txt\ngit add dump.txt\ngit commit -m 'add: ${randomByte}' --date=${currentDate.toISOString()}\n`
+        buffer += `echo -n "${randomByte}" >> dump.txt\ngit add dump.txt\ngit commit -m 'add: ${randomByte}' --date=${currentDate.toISOString()}\n`
         currentDate = increaseDate(currentDate, Increments.MINUTES)
       }
 
